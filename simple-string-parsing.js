@@ -2,7 +2,7 @@ function longestWord(paragraph){
     var words = paragraph.split(/[@$!%*?&#^_+.;:,?0-9 ]/);
     var longestWord = "";
     words.forEach(word => {
-        if(word.length > longestWord.length && word.match("^[a-zA-Z]")){
+        if(word.length > longestWord.length){
             longestWord = word;
         }
     });
